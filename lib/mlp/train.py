@@ -6,9 +6,9 @@ from lib.mlp.layer_utils import *
 from lib.optim import *
 
 
-class CIFAR10_DataLoader(object):
+class SVHN_DataLoader(object):
     """
-    Data loader class for CIFAR-10 Data.
+    Data loader class for SVHN Data.
 
     Arguments:
     - data: Array of input data, of shape (batch_size, d_1, ..., d_k)
@@ -118,7 +118,7 @@ def train_net(data, model, loss_func, optimizer, batch_size, max_epochs,
     # Initialize the variables
     data_train, labels_train = data["data_train"]
     data_val, labels_val = data["data_val"]
-    dataloader = CIFAR10_DataLoader(data_train, labels_train, batch_size)
+    dataloader = SVHN_DataLoader(data_train, labels_train, batch_size)
     opt_val_acc = 0.0
     opt_params = None
     loss_hist = []
