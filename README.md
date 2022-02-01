@@ -62,7 +62,7 @@ Run the following command to zip all the necessary files for submitting your ass
 sh collectSubmission.sh
 ```
 
-This will create a file named `assignment1.zip`, **please rename it with your usc student id (eg. 4916525888.zip)**, and submit this file through the [Google form](https://forms.gle/uP9TD8T6FkUBLufZ6).
+This will create a file named `assignment1.zip`, **please rename it with your usc student id (eg. 4916525888.zip)**, and submit this file through the [Google form](https://forms.gle/tswNbUika9fRswMC8).
 Do NOT create your own .zip file, you might accidentally include non-necessary materials for grading.
 We will deduct points if you don't follow the above submission guideline.
 
@@ -98,7 +98,7 @@ The usual rule of thumb is to report results with the best hyperparameters you f
 Exception is the prediction horizon parameter `T` in Problem 2, please **do not** report results for `T` smaller than the default value.
 
 - **Am I allowed to change code outside the TODO blocks?**\
-Unless specified otherwise (eg for hyperparameters) please do not change any code outside TODO blocks.
+Unless specified otherwise (eg for hyperparameters) please do not change any code outside TODO blocks. **Doing so may negatively affect your grade**.
 
 - **My %reload_ext autoreload command does not work, how to fix it?**\
 This has been observed in the past and, whenever it was a problem, could be fixed by downgrading IPython to version 7.5.0: `pip3 install ipython==7.5`.
@@ -110,7 +110,7 @@ Make sure you do not include your virtual environment, checkpoints, or datasets.
 Try installing the `zip` package through `cygwin`.
 
 - **How can I update my submission before the deadline?**\
-You can submit your solution up to 10 times **before the deadline** without penalty. You do not need to remove any submitted files but can simply make another submission, we will only grade your latest submission. If you make a submission **after the deadline** we will still grade your latest submission, but deduct late days accordingly.
+You can submit your solution up to 10 times **before the deadline** without penalty. You do not need to remove any submitted files but can simply make another submission, we will only grade your latest submission. If you make a submission **after the deadline** we will still grade your latest submission, but deduct late days accordingly. As stated in the syllabus, you have 5 late days for the semester across **all** assignments.
 
 - **General debugging tips**
 1. Make sure your implementations matches the specified model layers perfectly.
