@@ -54,11 +54,11 @@ class DropoutNet(Module):
         self.net = sequential(
             flatten(name="flat"),
             fc(15, 20, 5e-2, name="fc1"),
-            relu(name="relu1"),
+            leaky_relu(name="relu1"),
             fc(20, 30, 5e-2, name="fc2"),
-            relu(name="relu2"),
+            leaky_relu(name="relu2"),
             fc(30, 10, 5e-2, name="fc3"),
-            relu(name="relu3"),
+            leaky_relu(name="relu3"),
             dropout(keep_prob, seed=seed)
         )
 
@@ -82,21 +82,10 @@ class DropoutNetTest(Module):
             flatten(name="flat"),
             fc(3072, 500, 1e-2, name="fc1"),
             dropout(keep_prob, seed=seed),
-            relu(name="relu1"),
+            leaky_relu(name="relu1"),
             fc(500, 500, 1e-2, name="fc2"),
-            relu(name="relu2"),
-            fc(500, 10, 1e-2, name="fc3"),
-        )
-
-
-class FullyConnectedNetwork_2Layers(Module):
-    def __init__(self, keep_prob=0, dtype=np.float32, seed=None):
-        """ Some comments """
-        self.net = sequential(
-            flatten(name="flat"),
-            fc(5, 5, name="fc1"),
-            relu(name="relu1"),
-            fc(5, 5, name="fc2")
+            leaky_relu(name="relu2"),
+            fc(500, 11, 1e-2, name="fc3"),
         )
 
 
@@ -106,15 +95,15 @@ class FullyConnectedNetwork(Module):
         self.net = sequential(
             flatten(name="flat"),
             fc(3072, 100, 5e-2, name="fc1"),
-            relu(name="relu1"),
+            leaky_relu(name="relu1"),
             fc(100, 100, 5e-2, name="fc2"),
-            relu(name="relu2"),
+            leaky_relu(name="relu2"),
             fc(100, 100, 5e-2, name="fc3"),
-            relu(name="relu3"),
+            leaky_relu(name="relu3"),
             fc(100, 100, 5e-2, name="fc4"),
-            relu(name="relu4"),
+            leaky_relu(name="relu4"),
             fc(100, 100, 5e-2, name="fc5"),
-            relu(name="relu5"),
-            fc(100, 10, 5e-2, name="fc6")
+            leaky_relu(name="relu5"),
+            fc(100, 11, 5e-2, name="fc6")
         )
 

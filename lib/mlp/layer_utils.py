@@ -181,13 +181,15 @@ class fc(object):
         return dfeat
 
 
-class relu(object):
-    def __init__(self, name="relu"):
+class leaky_relu(object):
+    def __init__(self, negative_slope=0.01, name="leaky_relu"):
         """
+        - negative_slope: value that negative inputs are multiplied by
         - name: the name of current layer
         - meta: to store the forward pass activations for computing backpropagation
         Note: params and grads should be just empty dicts here, do not update them
         """
+        self.negative_slope = negative_slope
         self.name = name
         self.params = {}
         self.grads = {}
