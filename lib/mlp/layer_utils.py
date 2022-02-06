@@ -121,7 +121,7 @@ class flatten(object):
 
 
 class fc(object):
-    def __init__(self, input_dim, output_dim, init_scale=0.02, name="fc"):
+    def __init__(self, input_dim, output_dim, init_scale=0.002, name="fc"):
         """
         In forward pass, please use self.params for the weights and biases for this layer
         In backward pass, store the computed gradients to self.grads
