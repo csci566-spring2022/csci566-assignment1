@@ -51,8 +51,8 @@ Majority of implementations will also be required under `lib` with specified tag
 ### Problem 1: Basics of Neural Networks (40 points)
 The IPython Notebook `Problem_1.ipynb` will walk you through implementing the basics of neural networks.
 
-### Problem 2: RNNs for Language Modeling (60 points)
-The IPython Notebook `Problem_2.ipynb` will walk you through implementing a recurrent neural network (RNN) from scratch and using it for language modeling.
+### Problem 2: CNNs for Image Classification (60 points)
+The IPython Notebook `Problem_2.ipynb` will walk you through implementing a convolutional neural network (CNN) from scratch and using it for image classification.
 
 ## How to submit
 
@@ -77,15 +77,8 @@ PLEASE USE **PIAZZA** TO POST QUESTIONS (under folder assignment1).
 
 ## FAQ
 
-- **Cannot get 50% accuracy for TinyNet in Problem 1**\
-You can try to vary the batch size, epochs and learning rate decay. Please don't modify any code outside the TODO block.
-
 - **What is a good starting learning rate?**\
 There is a good article: https://medium.com/octavian-ai/which-optimizer-and-learning-rate-should-i-use-for-deep-learning-5acb418f9b2
-
-- **My RNN in Problem 2 is better than the LSTM?** \
-Try experimenting with the number of training epochs (LSTM may train slower in the beginning) and the training prediction horizon (benefits of LSTMs get more apparent on longer prediction problems). \
-Even then, it is possible that the training dataset is too simple to show large benefits of LSTMs.
 
 - **When parsing the text data file for Problem 2 I get a `charmap codec can't decode` error.**\
 This might be a platform dependent issue. In past years adding `encoding="utf8"` to the file `open` command helped in these cases.
