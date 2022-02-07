@@ -3,7 +3,6 @@
 ## The objectives of this assignment
 * Implement the forward and backward passes as well as the neural network training procedure
 * Implement the widely-used optimizers and training tricks including dropout
-* Implement recurrent neural networks from scratch
 * Implement a convolutional neural network for image classification from scratch
 
 ## Work on the assignment
