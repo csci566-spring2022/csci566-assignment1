@@ -4,7 +4,7 @@
 * Implement the forward and backward passes as well as the neural network training procedure
 * Implement the widely-used optimizers and training tricks including dropout
 * Implement recurrent neural networks from scratch
-* Use recurrent neural networks for language modeling of arbitrary text corpora
+* Implement a convolutional neural network for image classification from scratch
 
 ## Work on the assignment
 Working on the assignment in a virtual environment is highly encouraged.
@@ -104,6 +104,9 @@ Try installing the `zip` package through `cygwin`.
 
 - **How can I update my submission before the deadline?**\
 You can submit your solution up to 10 times **before the deadline** without penalty. You do not need to remove any submitted files but can simply make another submission, we will only grade your latest submission. If you make a submission **after the deadline** we will still grade your latest submission, but deduct late days accordingly. As stated in the syllabus, you have 5 late days for the semester across **all** assignments.
+
+- **How does grading work?**\
+Each test case has an associated grade, if the test cases pass, you will received the full number of points. You will receive partial credit if your code runs but does not pass the test case, and no credit if your code does not run. For questions that involve training a network, you will receive full credit for reaching the threshold indicated. Otherwise, you will receive points proportional to how close you reach the threshold, with 10% test accuraccy (random chance) receiving zero points, up to the threshold specified receiving full credit.
 
 - **General debugging tips**
 1. Make sure your implementations matches the specified model layers perfectly.
