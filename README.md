@@ -72,7 +72,7 @@ If you have any question or find a bug in this assignment (or even any suggestio
 
 Again, NO INDIVIDUAL EMAILS WILL BE RESPONDED.
 
-PLEASE USE **PIAZZA** TO POST QUESTIONS (under folder assignment1).
+PLEASE USE **PIAZZA** TO POST QUESTIONS (under folder `hw1`).
 
 ## FAQ
 
