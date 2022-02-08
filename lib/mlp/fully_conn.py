@@ -85,7 +85,7 @@ class DropoutNetTest(Module):
             leaky_relu(name="relu1"),
             fc(500, 500, 1e-2, name="fc2"),
             leaky_relu(name="relu2"),
-            fc(500, 11, 1e-2, name="fc3"),
+            fc(500, 10, 1e-2, name="fc3"),
         )
 
 
@@ -104,6 +104,6 @@ class FullyConnectedNetwork(Module):
             leaky_relu(name="relu4"),
             fc(100, 100, 5e-2, name="fc5"),
             leaky_relu(name="relu5"),
-            fc(100, 11, 5e-2, name="fc6")
+            fc(100, 10, 5e-2, name="fc6")
         )
 

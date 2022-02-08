@@ -86,8 +86,7 @@ This might be a platform dependent issue. In past years adding `encoding="utf8"`
 This variable is used to pass all values to the backward pass that are necessary to compute the gradients. You can use it as a dictionary to pass any desired values over to the `backward` function.
 
 - **I experimented with the hyperparameters and tried many different combinations, which ones should I report?**\
-The usual rule of thumb is to report results with the best hyperparameters you found. \
-Exception is the prediction horizon parameter `T` in Problem 2, please **do not** report results for `T` smaller than the default value.
+The usual rule of thumb is to report results with the best hyperparameters you found.
 
 - **Am I allowed to change code outside the TODO blocks?**\
 Unless specified otherwise (eg for hyperparameters) please do not change any code outside TODO blocks. **Doing so may negatively affect your grade**.
