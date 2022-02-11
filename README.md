@@ -21,8 +21,6 @@ source your_virtual_env/bin/activate
 
 # install dependencies
 pip3 install -r requirements.txt
-# or
-pip3 install numpy jupyter ipykernel opencv-python matplotlib
 
 # work on the assignment
 deactivate # Exit the virtual environment
